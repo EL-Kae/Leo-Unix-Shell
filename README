@@ -1,0 +1,24 @@
+Hello Users,
+
+This shell is capable of executing single commands and piping
+commands. Please note only one pipe is allowed. You can set your own
+PS1 variable by typing it in this format:PS1=<Your value>
+For example:
+
+    PS1=Leonardo's_Shell
+    
+This will replace the default PS1 variable.
+
+I/O redirection is now supported on this shell, however not with
+piped commands. 
+Signals are caught accordingly and the flow of execution is send to 
+certain locations in main(). If signals are send before getline() 
+where memory is first allocated, the flow jumps back to the begin 
+of main. If signals are send after memory has been allocated, the 
+flow jumps right before memory cleanup. This is so memory is
+cleaned up.
+
+At prompt, SIGINT and SIGQUIT will be ignored. During the execution
+of a command, these signals would stop the command.
+
+-Thanks. 
