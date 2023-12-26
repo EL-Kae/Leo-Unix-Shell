@@ -1,12 +1,11 @@
 /*
-  Leonardo Kaestner 
   This program takes in an input from the user parses it using 
   tokenization. These tokens are placed into an array of strings. This array 
   of strings is then executed using a child process. Piping is supported, 
   please note only one pipe is allowed. This shell is also capable of 
   changing directory and setting the PS1 environmental variable. I/O 
   redirection is supported and signals such as SIGINT and SIGQUIT are handled
-  accordingly. Please note i/o redirection with pipes is not supported. 
+  accordingly. Please note i/o redirection with pipes is not supported at this time.
  */
 
 //Header files and Marcos
