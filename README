@@ -5,7 +5,7 @@ commands. Please note only one pipe is allowed. You can set your own
 PS1 variable by typing it in this format:PS1=<Your value>
 For example:
 
-    PS1=Leonardo's_Shell
+    PS1=Leo's_Shell
     
 This will replace the default PS1 variable.
 
